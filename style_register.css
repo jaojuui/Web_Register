@@ -1,0 +1,106 @@
+@keyframes gradient-animation {
+    20% { background-position: 20% 30%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 20% 30%; }
+  }
+body{
+    background-image: radial-gradient(#ffffff 10%, transparent 10%);
+    background-size: 50px 50px; /* ขนาดลายจุด */
+    background: linear-gradient(45deg, #d0ffa9 40%, #ffd9bc 60%);
+  background-size: 200% 200%;
+  animation: gradient-animation 15s ease infinite;
+  position: relative;
+  overflow: hidden; /* ป้องกันการเลื่อนถ้าวงกลมล้น */
+      
+
+}
+  .circle {
+    position: absolute;
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    z-index: -1; /* ให้อยู่ด้านหลังของเนื้อหา */
+  }
+  
+  .circle-1 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 20%;
+  }
+  
+  .circle-2 {
+    width: 1000px;
+    height: 1000px;
+    top: 50%;
+    left: 70%;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  .circle-3 {
+    width: 300px;
+    height: 300px;
+    bottom: 25%;
+    right: 20%;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .circle-4 {
+    width: 150px;
+    height: 150px;
+    top: 15%;
+    left: 90%;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+
+h1 {
+    text-align: center;
+}
+label{
+    color: black;
+}
+
+.allpage{
+    flex-direction: column;
+    /* height: 730px;
+    width: 1530px; */
+    /* background-color: tomato; */
+}
+.head{
+    height: 60px;
+    background-color: #FFDB5C;
+}
+.center{
+    flex-direction: row;
+    height: 93%;
+    width: 100%px;
+}
+.boxtext{
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 70%;
+    width: 80%;
+    color: red;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    display: grid;
+    place-items: center; /* จัดให้อยู่กลางทั้งแนวนอนและแนวตั้ง */
+    background-color: #FFC5C5;
+    border-radius: 20px;
+    text-align: center;
+
+      
+}
+
+.boxform{
+    margin-left: 0px;
+    height: 95%;
+    width: 97%;
+    color: red;
+    align-items: center; 
+    /* background: linear-gradient(to right, #86a8e7, #91eae4); */
+    /* border-radius: 15px; */  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* padding: 20px; */
+    color: white;
+    /* text-align: center; */
+}
+

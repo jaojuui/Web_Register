@@ -1,0 +1,63 @@
+@keyframes gradient-animation {
+    20% { background-position: 20% 30%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 20% 30%; }
+  }
+body{
+    background-image: radial-gradient(#ffffff 10%, transparent 10%);
+    background-size: 50px 50px; /* ขนาดลายจุด */
+    /* background: #C3FF93; สีพื้นหลังสำรอง */
+    /* background: linear-gradient(to right, #C3FF93, #FFDB5C); */
+    background: linear-gradient(45deg, #d0ffa9 40%, #ffd9bc 60%);
+    /* background: linear-gradient(90deg, #ff7e5f, #feb47b, #86a8e7, #91eae4); */
+  background-size: 200% 200%;
+  animation: gradient-animation 15s ease infinite;
+  position: relative;
+  background-color: #e2ffc9; /* พื้นหลังหลัก */
+  overflow: hidden; /* ป้องกันการเลื่อนถ้าวงกลมล้น */
+      
+
+}
+  .circle {
+    position: absolute;
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    z-index: -1; /* ให้อยู่ด้านหลังของเนื้อหา */
+  }
+  
+  .circle-1 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 20%;
+  }
+  
+  .circle-2 {
+    width: 1000px;
+    height: 1000px;
+    top: 50%;
+    left: 70%;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  .circle-3 {
+    width: 300px;
+    height: 300px;
+    bottom: 25%;
+    right: 20%;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  .circle-4 {
+    width: 150px;
+    height: 150px;
+    top: 15%;
+    left: 90%;
+    background: rgba(255, 255, 255, 0.4);
+  }
+  
+  .head{
+    height: 60px;
+    background-color: #FFDB5C;
+}
+.boxform{
+
+}
