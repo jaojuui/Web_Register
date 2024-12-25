@@ -18,7 +18,6 @@
     <div class="head">
       <nav class="navbar navbar-expand-sm navbar-dark">
         <div class="container-fluid">
-          <!-- <a class="navbar-brand" href="javascript:void(0)">Logo</a> -->
           <img class="navbar-brand" src="logo.png" alt="" width="50" height="50">
 
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -30,10 +29,10 @@
                 <a class="nav-link" href="register.html" style="color: white;">Register</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)" style="color: white;"> Edit</a>
+                <a class="nav-link" href="editprofile.html" style="color: white;"> Edit</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="javascript:void(0)" style="color: white;"s>Profile</a>
+                <a class="nav-link" href="profile.html" style="color: white;"s>Profile</a>
               </li>
             </ul>
             <form class="d-flex">
@@ -46,45 +45,58 @@
     </div>
 
     <div class="allpage">
-        <div class="boxform" style="background-color: rgba(255, 255, 255, 0.55);border-radius: 20px;margin-top: 2%;margin-left: 2.5%;height: 100%;width: 95%;">
+        <div class="boxform" style="background-color: rgba(255, 255, 255, 0.55);border-radius: 20px;margin-top: 2%;margin-left: 2.5%;height: 120%;width: 95%;">
             <div class="container-fluid">
-                <div class="row" style="height: 670px;">
+                <div class="row" style="height: 120%;">
                     <div class="col-sm-5 col-12" style="">
-                        <img src="cat.jpg" alt="" srcset="" width="600px" height="600px" style="border-radius: 20px;margin-left: 10%;margin-top: 5%;">
+                        <div class="container-fluid">
+                            <div class="column">
+                                <div>
+                                    <img src="cat.jpg" alt="" srcset="" width="97%" height="75%" style="border-radius: 20px;margin-left: 5%;margin-top: 4%;">
+                                </div>
+                                <div style="height: 100px;margin-left: 10%;width: 85%;">
+                                    <div class="mb-3">
+                                        <label for="profilePicture" class="form-label">Upload Profile Picture</label>
+                                        <input type="file" class="form-control" id="profilePicture" name="profilePicture" accept="image/*">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-sm-7 col-12" style="">
-                        <div class="col-sm-6 col-8" style="width: 80%;height: 0%;margin-left: 14%;">
+                        <div class="col-sm-6 col-12" style="width: 80%;height: 0%;margin-left: 10%;">
                             <form action="/action_page.php">
                                 <div class="mb-6">
                                   <br>
                                     <label for="text" class="form-label">first name </label>
-                                    <input type="text" class="form-control" id="textfirstname" placeholder="Kanyaporn" name="textfirstname" readonly>
+                                    <input type="text" class="form-control" id="textfirstname" value="Kanyaporn" placeholder="Enter First Name" name="textfirstname">
                                 </div>
                                 <div class="mb-6">
                                     <label for="text" class="form-label">last name</label>
-                                    <input type="text" class="form-control" id="textlastname" placeholder="Rungsang" name="textlastname" readonly>
+                                    <input type="text" class="form-control" id="textlastname" value="Rungsang" placeholder="Enter Last Name" name="textlastname">
                                 </div>
                                 <div class="mb-6">
                                     <label for="number" class="form-label">Tel.</label>
-                                    <input type="number" class="form-control" id="tel" placeholder="0904446667" name="tel" readonly>
+                                    <input type="number" class="form-control" id="tel" value="0904446667" placeholder="Enter phone" name="tel">
                                 </div>
                                 <div class="mb-6">
                                     <label for="date" class="form-label"  >birth day:</label>
-                                    <input type="date" class="form-control" id="birthday" placeholder="1 กันยายน 2567" name="birthdays"readonly>
+                                    <input type="date" class="form-control" id="birthday" value="2004-09-01" name="birthdays">
                                 </div>
                                 <div class="mb-6 mt-6">
                                   <label for="email" class="form-label">Email:</label>
-                                  <input type="email" class="form-control" id="email" placeholder="66011212074@msu.ac.th" name="email"readonly>
+                                  <input type="email" class="form-control" id="email" value="66011212074@msu.ac.th" placeholder="Enter Email" name="email">
                                 </div>
                                 <div class="mb-6">
                                   <label for="pwd" class="form-label">Password:</label>
-                                  <input type="password" class="form-control" id="pwd" placeholder="*******" name="pswd"readonly>
+                                  <input type="password" class="form-control" id="pwd" value="1234567" placeholder="Enter Password"" name="pswd">
                                 </div>
                                 <div class="mb-6">
                                     <label for="pwd" class="form-label">Enter your password again:</label>
-                                    <input type="password" class="form-control" id="pwd" placeholder="*******" name="pswd"readonly>
+                                    <input type="password" class="form-control" id="pwd" value="1234567" placeholder="Enter Password" name="pswd">
                                 </div>
-                                <button type="button" class="btn btn-warning">Edit Profile</button>
+                                <button type="button" class="btn btn-warning" style="align-items: center;margin-top: 2%;">Edit Profile</button>
+                                <br><br><br>
                               </form>
                           </div>
                     </div>
